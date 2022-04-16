@@ -1,0 +1,1 @@
+A portfolio website for a designer, freelancer and dev made with html, css and javascript
