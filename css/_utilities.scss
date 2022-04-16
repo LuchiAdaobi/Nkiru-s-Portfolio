@@ -1,0 +1,94 @@
+
+section{
+    font-family: 'Poppins', sans-serif;
+        .title{
+        font-family: $font-secondary;
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 10.5rem;
+            height: .3rem;
+            background-color: #111;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            // width: 10.5rem;
+            // height: .3rem;
+            background-color: #fff;
+            left: 50%;
+            font-size: 1.2rem;
+            color: $primary-color;
+            bottom: -11px;
+            padding: 5px;
+            transform: translateX(-50%);
+        }
+        }
+}
+
+
+    .about{
+        .title{
+            &::after {
+                
+                content: 'who I am';
+                
+            }
+        }
+    }
+    .services{
+        .title{
+            &::after {
+                content: 'what I provide';
+                background: #111;
+                
+            }
+            &::before {
+                background: #fff;
+            }
+        }
+    }
+
+    
+    .skills{
+        .title{
+            &::after {
+                
+                content: 'what I know';
+                
+            }
+
+            
+        }
+    }
+
+    
+    .teams{
+        .title{
+            &::after {
+                background: #111;
+                content: 'Works with me';
+            }
+            &::before {
+                background: #fff;
+            }
+        }
+    }
+    .contact{
+        .title{
+            &::after {
+                content: 'Get in touch';
+            }
+           
+        }
+    }
